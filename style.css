@@ -11,6 +11,19 @@ html, body{
     background-color: #0B0B0B;
 }
 
+/* cursor ................................................................. */
+#cursor{
+    height: 3vw;
+    width: 3vw;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+
+}
+
 /* loader div ..............................................................*/
 #loader{
     height: 100%;
@@ -28,7 +41,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2vw;
+    gap: 3vw;
 }
 
 #line1-part1{
@@ -66,36 +79,43 @@ html, body{
 
 #now{
     /* animation-name: nowAnimation; */
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    /* animation-timing-function: ease-in-out; */
     animation-iteration-count: infinite;
 }
 
 @keyframes nowAnimation {
     0%{
-        font-family: 'Plain light';
+        font-family: 'Silk Serif';
         -webkit-text-stroke: 1px #ffffff;
-        color: #ffffff;
+        color: transparent;
         font-weight: 100;
     }
     33%{
-        font-family: 'Silk Serif';
-        -webkit-text-stroke: 1px #ffffff;
-        color: transparent;
-        font-weight: 100;
-    }
-    66%{
         font-family: 'Plain light';
         -webkit-text-stroke: 1px #ffffff;
         color: #ffffff;
         font-weight: 100;
     }
-    100%{
+    66%{
         font-family: 'Silk Serif';
         -webkit-text-stroke: 1px #ffffff;
         color: transparent;
         font-weight: 100;
     }
+    100%{
+        font-family: 'Plain light';
+        -webkit-text-stroke: 1px #ffffff;
+        color: #ffffff;
+        font-weight: 100;
+    }
+}
+
+#message{
+    font-size: 2vh;
+    position: absolute;
+    left: 25%;
+    top: 75%;
 }
 
 /* Main Div ...............................................................*/
@@ -109,4 +129,77 @@ html, body{
 #page1{
     height: 100vh;
     width: 100%;
+}
+/* navigation bar/div */
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7vh 5vw;
+}
+
+#page1 #nav #nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+
+#page1 #nav #nav-part1 i{
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+#page1 #nav #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+
+#page1 #nav #nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+/* Page one content part 1*/
+
+#content-part1{
+    /* background-color: red; */
+    padding-left: 28vw; 
+    padding-top: 16vh;
+    height: fit-content;
+}
+
+.hero{
+    overflow: hidden;
+}
+
+.hero h1{
+    font-family: 'Plain Regular';
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 7.5vw;
+    font-weight: 500;
+}
+
+#hero3{
+    display: flex;
+    gap: 0.2vw;
+}
+
+#hero3 h1:nth-child(1), #hero3 h1:nth-child(3){
+    text-decoration: underline;
+}
+
+#hero3 h1:nth-child(1):hover, #hero3 h1:nth-child(3):hover{
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    text-decoration: none;
+}
+
+
+/* Page One content part2 */
+#content-part2{
+    background-color: crimson;
 }

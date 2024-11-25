@@ -1,9 +1,14 @@
-var tl = gsap.timeline()
+function loadingAnimation(){
+    var tl = gsap.timeline()
 tl.from(".line h1", {
     y: 150,
     stagger: 0.2,
     duration: 0.6,
     delay: 0.5
+})
+
+tl.from("#message", {
+    opacity: 0
 })
 
 tl.from("#line1-part1, .line h5",{
@@ -15,7 +20,6 @@ tl.from("#line1-part1, .line h5",{
         setInterval(function(){
             if(grow<100){
                 grow++
-                console.log(grow)
                 timerH5.textContent = grow;
             }
         },25)        
@@ -31,7 +35,7 @@ tl.to(".line",{
     opacity: 0,
     duration : 0.4,
     stagger: 0.1,
-    delay: 3,
+    delay: 2.5,
     ease: Power4
 
 })
@@ -51,3 +55,27 @@ tl.from("#main",{
 tl.to('#loader',{
     display: "none"
 })
+
+tl.from("#nav", {
+    opacity: 0
+})
+
+tl.from(".hero h1",{
+    y: 150,
+    stagger: 0.2
+})
+}
+
+function cursorAnimation(){
+    document.addEventListener("mousemove", function(details){
+        gsap.to("#cursor", {
+            left: details.x,
+            top: details.y
+        })
+    })
+    Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {
+    });
+}
+
+loadingAnimation();
+cursorAnimation();
