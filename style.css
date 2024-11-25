@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Plain Light";
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #0B0B0B;
+}
+
+/* loader div ..............................................................*/
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: #0B0B0B;
+    position: fixed;
+    z-index: 1;
+    padding: 14vh 5vw;
+}
+
+#loader .line{
+    height: fit-content; /* 16vh - for future use*/
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 2.5vw;
+    font-weight: 100;
+    font-family: 'Silk Serif';
+    padding-bottom: 3vh;
+}
+#line1-part1 h5{
+    /* background-color: red; */
+    width: 4vw;
+    text-align: right;
+}
+
+#loader .line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-family: 'Plain Light';
+    /* font-weight: 500; */
+    height: 7.5vw;
+    /* background-color: #fff; */
+}
+
+/* .line h5{
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+} */
+
+#now{
+    /* animation-name: nowAnimation; */
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nowAnimation {
+    0%{
+        font-family: 'Plain light';
+        -webkit-text-stroke: 1px #ffffff;
+        color: #ffffff;
+        font-weight: 100;
+    }
+    33%{
+        font-family: 'Silk Serif';
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+        font-weight: 100;
+    }
+    66%{
+        font-family: 'Plain light';
+        -webkit-text-stroke: 1px #ffffff;
+        color: #ffffff;
+        font-weight: 100;
+    }
+    100%{
+        font-family: 'Silk Serif';
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+        font-weight: 100;
+    }
+}
+
+/* Main Div ...............................................................*/
+#main{
+    position: relative;
+    background-color: #151515;
+}
+
+
+/* Page One ............................................................. */
+#page1{
+    height: 100vh;
+    width: 100%;
+}
