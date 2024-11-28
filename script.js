@@ -65,7 +65,6 @@ tl.from(".hero h1",{
     stagger: 0.2
 })
 }
-
 function cursorAnimation(){
     document.addEventListener("mousemove", function(details){
         gsap.to("#cursor", {
@@ -77,5 +76,5 @@ function cursorAnimation(){
     });
 }
 
-loadingAnimation();
-cursorAnimation();
+// loadingAnimation();
+// cursorAnimation();

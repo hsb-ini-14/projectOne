@@ -1,18 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #ffffff;
     font-family: "Plain Light";
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
     background-color: #0B0B0B;
 }
 
 /* cursor ................................................................. */
-#cursor{
+#cursor {
     height: 3vw;
     width: 3vw;
     border: 1px solid #ffffff;
@@ -25,7 +27,7 @@ html, body{
 }
 
 /* loader div ..............................................................*/
-#loader{
+#loader {
     height: 100%;
     width: 100%;
     background-color: #0B0B0B;
@@ -34,8 +36,9 @@ html, body{
     padding: 14vh 5vw;
 }
 
-#loader .line{
-    height: fit-content; /* 16vh - for future use*/
+#loader .line {
+    height: fit-content;
+    /* 16vh - for future use*/
     /* background-color: red; */
     overflow: hidden;
     display: flex;
@@ -44,25 +47,28 @@ html, body{
     gap: 3vw;
 }
 
-#line1-part1{
+#line1-part1 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1vw;
 }
-#line1-part1 h5, #line1-part1 h6{
+
+#line1-part1 h5,
+#line1-part1 h6 {
     font-size: 2.5vw;
     font-weight: 100;
     font-family: 'Silk Serif';
     padding-bottom: 3vh;
 }
-#line1-part1 h5{
+
+#line1-part1 h5 {
     /* background-color: red; */
     width: 4vw;
     text-align: right;
 }
 
-#loader .line h1{
+#loader .line h1 {
     font-size: 6.5vw;
     text-transform: uppercase;
     font-family: 'Plain Light';
@@ -77,7 +83,7 @@ html, body{
     font-weight: 500;
 } */
 
-#now{
+#now {
     /* animation-name: nowAnimation; */
     animation-duration: 3s;
     /* animation-timing-function: ease-in-out; */
@@ -85,25 +91,28 @@ html, body{
 }
 
 @keyframes nowAnimation {
-    0%{
+    0% {
         font-family: 'Silk Serif';
         -webkit-text-stroke: 1px #ffffff;
         color: transparent;
         font-weight: 100;
     }
-    33%{
+
+    33% {
         font-family: 'Plain light';
         -webkit-text-stroke: 1px #ffffff;
         color: #ffffff;
         font-weight: 100;
     }
-    66%{
+
+    66% {
         font-family: 'Silk Serif';
         -webkit-text-stroke: 1px #ffffff;
         color: transparent;
         font-weight: 100;
     }
-    100%{
+
+    100% {
         font-family: 'Plain light';
         -webkit-text-stroke: 1px #ffffff;
         color: #ffffff;
@@ -111,7 +120,7 @@ html, body{
     }
 }
 
-#message{
+#message {
     font-size: 2vh;
     position: absolute;
     left: 25%;
@@ -119,64 +128,65 @@ html, body{
 }
 
 /* Main Div ...............................................................*/
-#main{
+#main {
     position: relative;
     background-color: #151515;
 }
 
 
 /* Page One ............................................................. */
-#page1{
-    /* height: 100vh; */
+#page1 {
+    min-height: 100vh;
     width: 100%;
     /* overflow-x: hidden; */
 }
+
 /* navigation bar/div */
-#page1 #nav{
+#page1 #nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 7vh 5vw;
 }
 
-#page1 #nav #nav-part1{
+#page1 #nav #nav-part1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2.5vw;
 }
 
-#page1 #nav #nav-part1 i{
+#page1 #nav #nav-part1 i {
     font-weight: 100;
     font-size: 1vw;
 }
 
-#page1 #nav #nav-part2{
+#page1 #nav #nav-part2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2.5vw;
 }
 
-#page1 #nav #nav-part2 h4{
+#page1 #nav #nav-part2 h4 {
     font-size: 1vw;
     font-weight: 100;
 }
 
 /* Page one content part 1*/
 
-#content-part1{
+#content-part1 {
     /* background-color: red; */
-    padding-left: 28vw; 
+    padding-left: 28vw;
     padding-top: 16vh;
     height: fit-content;
 }
 
-.hero{
+.hero {
     overflow: hidden;
 }
 
-.hero h1{
+.hero h1 {
     font-family: 'Plain Regular';
     font-size: 7.5vw;
     text-transform: uppercase;
@@ -184,17 +194,19 @@ html, body{
     font-weight: 500;
 }
 
-#hero3{
+#hero3 {
     display: flex;
     gap: 0.2vw;
     transition: all ease 0.3s;
 }
 
-#hero3 h1:nth-child(1), #hero3 h1:nth-child(3){
+#hero3 h1:nth-child(1),
+#hero3 h1:nth-child(3) {
     text-decoration: underline;
 }
 
-#hero3 h1:nth-child(1):hover, #hero3 h1:nth-child(3):hover{
+#hero3 h1:nth-child(1):hover,
+#hero3 h1:nth-child(3):hover {
     -webkit-text-stroke: 1px #ffffff;
     color: transparent;
     text-decoration: none;
@@ -202,14 +214,14 @@ html, body{
 
 
 /* Page One content part2 */
-#content-part2{
-height: 100vh;
-width: 100%;
-position: relative;
+#content-part2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
 
-#video-container{
+#video-container {
     height: 84vh;
     width: 71vw;
     position: relative;
@@ -217,7 +229,8 @@ position: relative;
     padding-top: 10vh;
     /* background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg); */
 }
-#video-container img{
+
+#video-container img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -225,13 +238,13 @@ position: relative;
     /* top: 0; */
 }
 
-#video-container video{
+#video-container video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#video-cursor{
+#video-cursor {
     height: 10vw;
     width: 10vw;
     background-color: #FFA63D;
@@ -245,18 +258,134 @@ position: relative;
     justify-content: center;
 }
 
-#video-cursor i{
+#video-cursor i {
     font-size: 2.5vw;
 }
 
 /* Page Two ......................................................................... */
-#page2{
+#page2 {
     min-height: 100vh;
     width: 100%;
+    position: relative;
 }
 
-/* Page Three */
+/* Page Three ........................................................................*/
 
-#page3{
-    
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
 }
+
+/* common for page2,3,4 heading, h1 and line (down)*/
+.heading{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 8vw;
+    padding-left: 28%;
+    margin-bottom: 12vh;
+}
+
+.heading h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+.line{
+    height: 1px;
+    width: 68%;
+    background-color: #ffffff;
+    margin-left: 28%;
+}
+/* common for page2,3,4 heading, h1 and line (up) */
+
+/* page 3 part1 content */
+#page3-part1{
+    /* background-color: crimson; */
+    margin-top: 8vh;
+}
+
+/* page 3 part1 first para  */
+#page3-part1 #part1-para{
+    /* background-color: aqua; */
+    padding-left: 28%;
+    height: 45vh;
+}
+
+#page3-part1 #part1-para p{
+    width: 50%;
+    font-size: 5vh;
+    line-height: 6vh;
+}
+
+/* page 3 part 1 flex box */
+
+#page3-part1 #part1-flex{
+    /* background-color: aqua; */
+    display: flex;
+    gap: 2vw;
+    padding-left: 28%;
+    margin-top: 5vh;
+}
+
+#page3-part1 #part1-flex img{
+    height: 90vh;
+    width: 70%;
+}
+
+#page3-part1 #part1-flex p{
+    width: 50%;
+    font-size: 2.2vh;
+}
+
+/* page 3 part 1 blue box */
+
+#page3-part1 #part1-blue{
+    background-color: #3F7DF4;
+    height: 90vh;
+    width: 34%;
+    padding: 10vh 3vw;
+    position: relative;
+    left: 50%;
+    /* top: -50%; */
+    transform: translate(2.5%, -35%);
+}
+
+#page3-part1 #part1-blue .element{
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    gap: 4vw;
+    border-bottom: 1px solid #ffffff8f;
+    padding-bottom: 2.1vw;
+    margin-bottom: 2.1vw;
+}
+
+#page3-part1 #part1-blue .element h4{
+    font-size: 4vh;
+    font-weight: 500;
+    /* width: 70%; */
+}
+#page3-part1 #part1-blue .element h6{
+    font-size: 2vh;
+    font-weight: 100;
+    width: 30%;
+}
+
+/* line below blue box */
+#below-blue{
+    margin-top: -10vh;
+}
+/* page 3 part 2 */
+
+#page3-part2{
+    /* background-color: aqua; */
+    padding-left: 28%;
+    margin-top: 4vh;
+}
+#page3-part2 h6{
+    font-size: 2.2vh;
+    font-weight: 100;
+}
+
+/* page 3  part3 sliding animation*/
