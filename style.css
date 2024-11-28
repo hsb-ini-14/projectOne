@@ -180,6 +180,16 @@ body {
     padding-left: 28vw;
     padding-top: 16vh;
     height: fit-content;
+    position: relative;
+}
+
+#content-part1::before{
+    content:"01";
+    position: absolute;
+    left: 18%;
+    top: 18%;
+    font-size: 3vw;
+    font-family: "Silk Serif";
 }
 
 .hero {
@@ -269,6 +279,15 @@ body {
     position: relative;
 }
 
+#heading-page2::before{
+    content:"02";
+    position: absolute;
+    left: 18%;
+    top: 1%;
+    font-size: 3vw;
+    font-family: "Silk Serif";
+}
+
 /* Page Three ........................................................................*/
 
 #page3 {
@@ -284,6 +303,14 @@ body {
     height: 8vw;
     padding-left: 28%;
     margin-bottom: 12vh;
+}
+#heading-page3::before{
+    content:"03";
+    position: absolute;
+    left: 18%;
+    top: 1%;
+    font-size: 3vw;
+    font-family: "Silk Serif";
 }
 
 .heading h1{
@@ -382,6 +409,7 @@ body {
     /* background-color: aqua; */
     padding-left: 28%;
     margin-top: 4vh;
+    margin-bottom: 15vh;
 }
 #page3-part2 h6{
     font-size: 2.2vh;
@@ -389,3 +417,155 @@ body {
 }
 
 /* page 3  part3 sliding animation*/
+
+#page3-part3{
+    /* background-color: aqua; */
+    height: fit-content;
+    width: 100%;
+    /* position: relative; */
+    margin-bottom: 20vh;
+}
+
+#page3-part3 .sliding-elem{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    /* margin-bottom: 0.8vw; */
+}
+
+#page3-part3 .sliding-elem h1{
+    /* background-color: red; */
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+    /* margin-right: -4px; */
+    animation-name: banner;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 4px));
+    }
+
+}
+
+
+#page3-part3 .sliding-elem2{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    /* margin-bottom: 0.8vw; */
+}
+
+#page3-part3 .sliding-elem2 h1{
+    /* background-color: red; */
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: translateX(calc(-100% -4px));
+    /* margin-right: -4px; */
+    animation-name: banner;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+/* This has to be fixed  */
+#page3-part3 .sliding-elem h1 span, #page3-part3 .sliding-elem2 h1 span{
+    font-family: 'Silk Serif';
+    font-weight: 100;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+}
+
+/* Page Four Footer */
+
+#page4{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#heading-footer{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1vw;
+    position: relative;
+}
+
+#heading-footer::before{
+    content:"04";
+    position: absolute;
+    left: 18%;
+    top: 1%;
+    font-size: 3vw;
+    font-family: "Silk Serif";
+}
+
+#heading-footer i{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #ffffff ;
+    color: transparent;
+    font-weight: 100;
+}
+#heading-footer h1:hover{
+    font-family: 'Silk Serif';
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    font-weight: 100;
+}
+
+/* page four footer content below */
+#footer-content{
+    /* background-color: aqua; */
+    padding-left: 28%;
+    padding-right: 12%;
+    padding-top: 15vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+#box1{
+    margin-right: 5vw;
+}
+
+#footer-content .box h6{
+    font-size: 1vw;
+    margin-bottom: 5vh;
+    font-weight: 600;
+}
+
+#footer-content .box h5{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+#box3 h5{
+    text-decoration: underline;
+}
+
+#footer-end{
+    padding-left: 28%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#footer-end h6{
+    font-size: 1vw;
+    font-weight: 200;
+}
